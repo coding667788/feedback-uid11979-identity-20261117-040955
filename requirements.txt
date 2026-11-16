@@ -1,0 +1,6 @@
+# Runtime dependency (pinned). The only third-party library used by the
+# verifier: RSA signing/verification primitives. cffi/pycparser are its
+# transitive dependencies and are pinned below for a reproducible install.
+cryptography==44.0.3
+cffi==2.1.1
+pycparser==3.12

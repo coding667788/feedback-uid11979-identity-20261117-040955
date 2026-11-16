@@ -1,0 +1,27 @@
+{
+  "issuers": [
+    {
+      "issuer": "https://issuer-a.test",
+      "jwks_url": "http://127.0.0.1:9001/issuer-a/jwks.json",
+      "audience": "api-a"
+    },
+    {
+      "issuer": "https://issuer-b.test",
+      "jwks_url": "http://127.0.0.1:9001/issuer-b/jwks.json",
+      "audience": "api-b"
+    }
+  ],
+  "admin_token": "local-admin-token-change-me-0123456789",
+  "listen_host": "127.0.0.1",
+  "listen_port": 8080,
+  "snapshot_ttl_seconds": 60,
+  "auto_refresh_cooldown_seconds": 5,
+  "fetch_timeout_seconds": 2.0,
+  "limits": {
+    "max_bytes": 262144,
+    "max_keys": 32,
+    "min_rsa_bits": 2048,
+    "max_rsa_bits": 8192,
+    "max_kid_length": 256
+  }
+}

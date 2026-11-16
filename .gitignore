@@ -5,3 +5,6 @@ __pycache__/
 *.db-wal
 *.db-shm
 .venv/
+# Test private keys are generated locally and must not be committed.
+state/
+.pytest_cache/
